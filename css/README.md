@@ -1,0 +1,1 @@
+created to implement css properties and practice javascript

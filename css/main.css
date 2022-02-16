@@ -17,10 +17,11 @@ margin-right: 10px;}
 
 /* hero button */
 
-/* .button1{background-color: rgb(196, 0, 0); color: white; padding: 5px 10px; border: 2px solid rgb(196, 0, 0);}
-button:hover{ background-color: transparent; color: red;}
+.button1{background-color: maroon; color: white; padding: 5px 10px; border: 2px solid maroon;}
+button:hover{ background-color: transparent; color: maroon;}
 .hero-slider img{position: relative;}
-.hero-slider .text{position: absolute; margin-top: 620px; margin-left: 200px; font-size: 50px;} */
+.hero-slider .text{position: absolute; margin-top: 620px; margin-left: 200px; font-size: 50px;}
+
 
 .hero-slider{ background-image: url("../image/banner.webp"); height: 650px; background-repeat: no-repeat; background-size: cover;}
 .hero-slider .text{ padding-top: 500px; padding-left: 130px; }
@@ -89,6 +90,9 @@ footer .social{ display: flex; justify-content: space-between; padding: 20px 0px
 .world{ padding-top: 5px; }
 .links{ display: flex; justify-content: space-evenly;}
 .links p{ color: black; }
+.region {padding-left: 20px;}
+.media-contact{padding-right: 20px;}
+.black-copyright{ background-color: black; height: 50px; width: 100% ; position: relative;  margin-top: -100px; color: white; text-align: center; font-style: italic; padding-top: 50px;}
 /* footer end */
 /* index page end */
 
@@ -121,7 +125,7 @@ button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px s
 .section4 .text h1{ color: black; font-size: 50px;}
 
 .section5{ background-image:url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-pdp-2-d.jpg); background-size: cover; height: 500px;}
-.section5 .text{ margin-left: 800px; padding-top:120px; color: white; font-size: 35px;}
+.section5 .text{ margin-left: 80px; padding-right:150px; color: white; font-size: 35px;}
 
 .section6{ background-image:url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-pdp-3-d.jpg); background-size: cover; height: 500px; margin-bottom: 20px;}
 .section6 .text{ margin-left: 60px; padding-top:160px;  padding-right: 700px; color: white; font-size: 35px; line-height: 1.2;}
@@ -131,7 +135,7 @@ button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px s
 .section7 h4{font-size: 30px; font-weight: 300; padding-top: 20px; margin-left:20px;}
 .section7 .portable{ width: 56%;}
 .section7 .portable .soundbar{ background-image: url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-block-1-d.jpg); background-size: cover; height: 340px; margin-bottom: 20px;}
-.section7 .portable .bluetooth{ background-image: url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-block-2-d.jpg); background-size: cover; height: 340px; margin-top: 20px;}
+.section7 .portable .bluetooth{ background-image: url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-block-2-d.jpg); background-size: cover; height: 340px; margin-top: 20px; padding-right: 400px;}
 .section7 .hifi{ background-image: url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-block-3-d.jpg); background-size: contain; height: 700px; width:36% ;}
 .section7 .text{ padding-top: 30px; line-height: 1.5; text-align: center;}
 .section7 .text h3{ font-size: 30px; }
@@ -152,7 +156,9 @@ button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px s
 .body2 .section3 .row1 .col{ width: 15%; height: 280px; justify-content: space-evenly; border: 1px solid gray; border-radius: 10px; margin: auto; padding: 30px;}
 .body2 .section3 .row1 .col img{ width: 160px; text-align: center;}
 
-.body .section5 .text{ margin-left: 700px; padding-top: 200px; }
+.section5{ margin-top: -25px; }
+.section5 h1{ margin-left: 800px; padding-top: 180px; color: white; font-size: 40px;}
+.section5 button{ margin-left: 800px; margin-top: 20px; color: white;}
 
 .body2 .hero1{ background-image: url(../image/Home\ Appliance/africa-homeappliances-supercategory-5-1.jpg); height: 800px; background-size: contain; background-repeat: no-repeat; } 
 .body2 .hero1 .text{ margin-left: 800px;margin-right: 150px; padding-top: 200px;}
