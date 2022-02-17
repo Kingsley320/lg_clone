@@ -1,6 +1,7 @@
 *{padding:0; margin:0; top: 0; font-family: sans-serif;}
 
 /* header section start */
+body{background-color: purple;}
 
 .header{display: flex; width: 100%; top: 0; align-items: center;}
 .header a{text-decoration: none; color: black; padding-right: 20px;}
