@@ -1,56 +1,60 @@
 *{padding:0; margin:0; top: 0; font-family: sans-serif;}
 
 /* header section start */
-body{background-color: purple;}
 
-.header{display: flex; width: 100%; top: 0; align-items: center;}
+
+.header{display: flex; width: 100%; top: 0; align-items: center; justify-content: space-between;}
+
 .header a{text-decoration: none; color: black; padding-right: 20px;}
-.header .logo{ padding: 5px 15px; margin-right: 20px;}
+.header .logo{ padding: 5px 10px 0px 30px; margin-right: 20px; text-align: center;}
 .header .nav-links{ width: 90%; margin-top:5px; justify-content: space-between;}
 .header .row1 {display: flex; justify-content: space-between; width: 100%; border-bottom: .1px solid lightgray; line-height: 2; 
 margin-right: 10px;} 
 .header .row1 .left{ padding-right: 30px; }
-
+.header .row2 img{width: 15px; padding-top: 10px;}
 .header .row2{display: flex; justify-content: space-between; line-height: 2;}
 .header .row2 a{text-decoration: none;}
+
+.header .row2-mobile {display: flex; justify-content:space-between; padding-top: 10px;}
+.header .row2-mobile img{width: 15px; }
+.header .mobile-header{ display: none; }
+/* .mobile-header{  } */
 
 /* header section end */
 
 /* hero button */
-
-.button1{background-color: maroon; color: white; padding: 5px 10px; border: 2px solid maroon;}
 button:hover{ background-color: transparent; color: maroon;}
-.hero-slider img{position: relative;}
-.hero-slider .text{position: absolute; margin-top: 620px; margin-left: 200px; font-size: 50px;}
+.button1{background-color: maroon; color: white; padding: 5px 10px; border: 2px solid maroon;}
 
 
-.hero-slider{ background-image: url("../image/banner.webp"); height: 650px; background-repeat: no-repeat; background-size: cover;}
-.hero-slider .text{ padding-top: 500px; padding-left: 130px; }
+.hero-slider{ background-image: url("../image/banner.webp"); height: 650px; background-repeat: no-repeat; background-size: 100%; }
+.hero-slider .text{ padding-top: 35%; padding-left: 15%; }
 .hero-slider .text button{background-color: maroon; color: white; padding: 5px 10px; 
-    border: 2px solid maroon; font-size: 15px; padding:10px 20px;}
+    border: 2px solid maroon; font-size: 20px; padding:10px 20px;}
 .hero-slider .text button:hover{ background-color: transparent; color: maroon;}
+
 /* hero end */
 
 /* display section */
-.display{ display: flex; justify-content: space-evenly; text-align: center; 
-    padding: 80px 100px 80px 100px; background-color: rgb(250, 249, 249); font-size: 15px;}  
-.display .col1,.display .col2,.display .col3{ border: 1px solid gray; border-radius: 20px;  background-color: white;  width: 25%;
-    padding: 50px 20px 50px 20px;}
+.display{ display: flex; justify-content: space-between; text-align: center; margin: auto; margin-top:100px; height: auto;
+    padding: 50px 50px; background-color: rgb(250, 249, 249); font-size: 15px; width: 90%;} 
+    .display img{ width: 100%; } 
+.display .col1,.display .col2,.display .col3{ border: 1px solid gray; border-radius: 20px;  background-color: white;   text-align: center; width: 28%;
+    padding: 50px 20px;}
 .display .col1 p, .col2 p, .col3 p{color: rgb(70, 67, 67); }
 .display .col1:hover{ text-decoration: underline; }
 .display .col2:hover{ text-decoration: underline; }
 .display .col3:hover{ text-decoration: underline; }
-/* display section end */
 
 /* row2 start */
 .row2-menu{background-image: url("../image/B2B Banner-01-01.webp"); width: 100%; height: 400px; 
-    background-size: 100%; background-repeat: no-repeat; margin-bottom: 50px;}
-.row2-menu button{ background-color: maroon; color: white; padding: 13px; border: 2px solid maroon; margin-left: 600px; margin-top: 150px;}
+    background-size: 100%; background-repeat: no-repeat; }
+.row2-menu button{ background-color: maroon; color: white; padding: 13px; border: 2px solid maroon; margin-left: 43%; margin-top: 10%;}
 .row2-menu button:hover{background-color: transparent; color: maroon; font-weight: 800;}
 /* row2 end */
 
 /* row3 start */
-.row3{display: flex; text-align: left; width: 100%; justify-content: space-evenly; overflow: hidden;}
+.row3{display: flex; text-align: left;margin: auto; width: 100%; justify-content: space-evenly;}
 .row3 .col{width: 30%;}
 .row3 .col img{ width: 100%; }
 .row3 h3{ font-size: 30px; font-weight: 600;}
@@ -59,27 +63,34 @@ button:hover{ background-color: transparent; color: maroon;}
 /* row3 end */
 
 /* row4 start */
-.row4{ display: flex; justify-content: space-between; 
-    border-bottom: 1px solid grey; padding: 0px 300px; line-height: 4; font-size: 15px; 
-    font-weight: 600; color: gray;}
-
+.row4{text-align: center; display: flex; justify-content: space-evenly;  
+    border-bottom: .1px solid grey; margin: auto; font-weight: 600; color: gray; width: 100%;
+}
+.row4 p:active{border-bottom: 3px solid maroon;}
 .checked{color: maroon; background-color: white;}
+
+.row4-menu-mobile{
+    text-align: center;
+    color: rgb(59, 59, 59);
+    border-bottom: 1px rgb(59, 59, 59) solid;
+}
 /* row4 end */
 
 /* row5 start */
-.row5{ display: flex; justify-content: space-evenly;  margin: 100px 100px 50px 100px; margin-top: 100px;}
-.row5 .disp{ text-align: center; margin: 0px 30px 0px 30px;}
+.row5{ display: flex; justify-content: space-between; text-align: center;  margin: auto; margin-top: 100px; width: 100%; }
+.row5 .disp{ text-align: center;}
+
 /* row5 end */
 
 /* row6 start */
-.row6{ display: flex; justify-content: space-evenly;  text-align: center; margin: auto; margin-top: 50px;}
-.row6 .col1{ width: 40%;  background-image: url("../image/africa-home-block-1-t.webp"); background-size: cover; background-repeat: no-repeat; height: 750px;}
-.row6 .col1 h1{ margin-top: 60px;color: white;}
+.row6{ display: flex; justify-content: space-evenly;  text-align: center; margin: auto; margin-top: 2.5rem;}
+.row6 .col1{ width: 40%;  background-image: url("../image/africa-home-block-1-t.webp"); background-size: cover; background-repeat: no-repeat; height: 47rem; background-position: center;}
+.row6 .col1 h1{ margin-top: 3.75rem;color: white;}
 .row6 .col2{ width: 55%;  overflow: hidden; color: black; text-align: left; }
-.row6 .col2 .row1{ background-image: url("../image/africa-home-block-2-d.webp"); background-size: contain; background-repeat: no-repeat; height: 368px; text-align: left;}
-.row6 .col2 .row2{ background-image: url("../image/africa-home-block-3-d.webp");   height: 368px; margin-top: 15px; background-size: contain; }
-.col2 .row1 h2, .col2 .row2 h2{ padding-top: 20px; padding-left: 20px; font-weight: 500;}
-
+.row6 .col2 .row1{ background-image: url("../image/africa-home-block-2-d.webp"); background-size: cover; background-repeat: no-repeat; height: 23rem; text-align: left; background-position: center;}
+.row6 .col2 .row2{ background-image: url("../image/africa-home-block-3-d.webp");   height: 23rem; margin-top: 15px; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.col2 .row1 h2, .col2 .row2 h2{ padding-top: 1.3rem; padding-left: 1.3rem; font-weight: 500;}
+    
 /* row6 end */
 
 /* footer start */
@@ -95,19 +106,79 @@ footer .social{ display: flex; justify-content: space-between; padding: 20px 0px
 .media-contact{padding-right: 20px;}
 .black-copyright{ background-color: black; height: 50px; width: 100% ; position: relative;  margin-top: -100px; color: white; text-align: center; font-style: italic; padding-top: 50px;}
 /* footer end */
+
+@media (max-width:1024px) {
+    .header .nav-links{ width:90%;}
+    .header a{font-size: 12px;}
+   .hero-slider .text {padding-left: 150px; padding-top: 350px;}
+}
+
+@media(max-width:768px){
+    .row4{display: none;}
+    .row4-menu-mobile{ display: block;}
+    .hero-slider .text {padding-top: 35%; padding-left: 15%;  }
+    .hero-slider .text button{font-size: 10px;}
+     .hero-slider{background-size: contain;}
+     .display{margin: auto; margin-top: -250px; text-align: center; }
+     .display .col1,.display .col2,.display .col3{ width: 70%; margin: auto; margin-top: 20px;}
+     .row3{ display: block; width: 100%;}
+     .row3 .col{text-align: center; width: 70%; margin: auto; margin-bottom: 50px;}
+     .row5 {display: block;}
+     .row6{display: block; justify-content: space-between;}
+     .row6 .col1{ width: 80%; margin: auto;}
+     .row6 .col2{ width: 80%; margin: auto; margin-top: 20px;}
+
+}
+
+@media(min-width:768px){
+    .row4{
+        display:flex;
+    }
+    .row4-menu-mobile{
+        display: none;
+    }
+}
+
+@media(max-width:920px){
+    .display{display: block; border-style:none;}
+    .footer .links{display: none;}
+    .hero-slider .text button{margin-left: -20px; margin-top:-180px;}
+}
+
+@media (max-width:880px){
+    .header .row2{display: none;}
+
+}
+
+@media (min-width:880px){
+    .header .row2-mobile{display: none;}
+    .row2-mobile:hover + .row2 { 
+        display: block;
+    }
+}
+
+@media(max-width:500px){
+    .header .nav-links{display: none;}
+    .header .mobile-header{ display: inline;}
+    .hero-slider{height: 500px;}
+    .row2-menu button{margin-left: 33%;}
+    .display{padding:0px 0px ;}
+}
 /* index page end */
 
 
 /* Tv audio video start */
 button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px solid maroon}
+button:hover{background-color: transparent;color: maroon; transition: .4s;}
 
-.section1{text-align: center;  margin: 50px 350px; }
-.section1 h1{ font-size: 38px; font-weight: 600;}
-.section1 small{ font-size: 14px; }
+.tv-audio .section1{text-align: center;  margin: 50px 350px; }
+.tv-audio .section1 h1{ font-size: 38px; font-weight: 600;}
+.tv-audio .section1 small{ font-size: 14px; }
 
-.section2{ background-image: url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-hero-2-d.jpg); background-size:cover; height: 500px;}
-.section2 h1{ font-size: 50px; font-weight:500; color: white; padding-top: 185px; margin-left: 785px;}
-.section2 button{ background-color: maroon; color: white; padding: 12px 25px; border: 1px solid maroon; margin-left: 785px;}
+.tv-audio .section2{ background-image: url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-hero-2-d.jpg); background-size:cover; height: 500px; }
+.tv-audio .section2 .text{margin: auto; margin-left: 800px; padding-top:200px;}
+.tv-audio .section2 h1{ font-size: 50px; font-weight:500; color: rgb(238, 231, 231);}
+
 
 .section3 .row1{ display: flex; width: 100%; text-align: center; margin:auto; margin-top: 50px; margin-bottom: 50px; }
 .section3 .row1 .col{ width: 15%; height: 280px; justify-content: space-evenly; border: 1px solid gray; border-radius: 10px; margin: auto; padding: 30px;}
@@ -119,17 +190,22 @@ button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px s
 
 .authorized{text-align: center;  }
 .retailers { display: flex; padding: 50px 50px; justify-content: space-evenly; text-align: center;}
-.retailers button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px solid maroon}
+.retailers button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px solid maroon;}
+/* transition animation */
+.retailers button:hover{background-color: transparent;color: maroon; transition: .3s;}
 
-.section4{ background-image: url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-pdp-1-d.jpg); background-size: contain; background-repeat: no-repeat; height: 700px;}
-.section4 .text{font-size: 20px; margin-left:700px; padding-top: 260px; color: rgb(78, 78, 78); line-height: 1.5;}
+.section4{ background-image: url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-pdp-1-d.jpg); background-size: cover ; background-repeat: no-repeat; height: 700px;}
+.section4 .text{font-size: 20px; margin-left:720px; padding-top: 280px; color: rgb(78, 78, 78); line-height: 1.5;}
 .section4 .text h1{ color: black; font-size: 50px;}
 
-.section5{ background-image:url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-pdp-2-d.jpg); background-size: cover; height: 500px;}
-.section5 .text{ margin-left: 80px; padding-right:150px; color: white; font-size: 35px;}
+.tv-audio .section5{height: 600px; background-image:url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-pdp-2-d.jpg); background-size: cover; background-repeat: no-repeat;}    
+.tv-audio .section5 .text{color: white; font-size: 35px; margin-right: 50px; padding-top: 180px;}
+.tv-audio .section5 .text { margin-left: 900px; }
 
-.section6{ background-image:url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-pdp-3-d.jpg); background-size: cover; height: 500px; margin-bottom: 20px;}
-.section6 .text{ margin-left: 60px; padding-top:160px;  padding-right: 700px; color: white; font-size: 35px; line-height: 1.2;}
+
+
+.section6{background-image:url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-pdp-3-d.jpg); background-size: cover; height: 500px;margin-bottom: 20px; background-repeat: no-repeat;}
+.section6 .text{ margin-left: 60px; padding-top:100px;  margin-right: 1100px; color: white; font-size: 35px; line-height: 1.2;}
 .section6 h2{font-weight: 400;}
 
 .section7 {display: flex; justify-content: space-evenly; margin: auto; margin-bottom: 30px; color: white;}
@@ -140,6 +216,74 @@ button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px s
 .section7 .hifi{ background-image: url(../image/LG\ TV_Audio_Video/africa-tvaudiovideo-block-3-d.jpg); background-size: contain; height: 700px; width:36% ;}
 .section7 .text{ padding-top: 30px; line-height: 1.5; text-align: center;}
 .section7 .text h3{ font-size: 30px; }
+
+
+@media (max-width:1024px) {
+    .tv-audio .section1{text-align: center;  margin: 50px 50px; }
+    .tv-audio .section2 .text{margin: auto; margin-left: 560px; padding-top:130px; }
+    .tv-audio .section2 {background-size: contain; height: 360px;}
+    .tv-audio .section4 .text{line-height: 1;}
+
+    .section4{background-size: contain; height: 550px;}
+    .section4 .text{font-size: 20px; margin-left:530px; padding-top: 180px; color: rgb(78, 78, 78); line-height: 1.5;}
+    .section4 .text h1{ color: black; font-size: 50px;}
+
+    .tv-audio .section5{height: 400px; background-repeat: no-repeat; background-size: contain;}
+    .tv-audio .section5 .text { margin-left: 600px; 
+        color: white; font-size: 35px; margin-right: 50px; padding-top: 80px;
+    }
+
+    .section6 .text{ margin-left: 60px; padding-top:100px;  margin-right: 600px; color: white; font-size: 35px; line-height: 1.2;}
+    .section6 h2{font-weight: 400;}
+    /* .section5 {background-size: cover; } */
+   /* .tv-audio .section4 .text{} */
+}
+
+@media (max-width:768px) {
+    .tv-audio .section2{height: 300px; }
+    .tv-audio .section2 .text{margin: auto; margin-left: 450px; padding-top:120px;}
+    .section3 .row1{width: 80%; margin: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:50px; grid-template-rows: 300px 300px;}
+    .section3 .row2{width: 80%; margin: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:50px; grid-template-rows: 300px 300px;}
+    .section3 .row1 .col{ width: 200px; }
+    .section3 .row2 .col{ width: 200px; }
+    .section4{background-size: contain;height: 410px;}
+    .section4 .text{ font-size: 15px; margin-left:390px; padding-top: 140px;}
+    .section4 .text h1{ font-size: 30px; line-height: 1.5;}
+
+    .tv-audio .section5{height: 290px; background-repeat: no-repeat; background-size: contain;}
+    .tv-audio .section5 .text { margin-left: 450px; 
+        color: white; font-size: 25px; margin-right: 50px; padding-top: 50px;}
+}
+
+@media (max-width:425px) {
+    /* .tv-audio .section7{ display: flex; } */
+    .header{border-bottom: .5px solid lightgray;}
+    .tv-audio .section2{ background-size:cover; height: 180px; }
+    .tv-audio .section2 .text{margin: auto; margin-left: 280px; padding-top:80px; line-height: 0.5;}
+    .tv-audio .section2 h1{ font-size: 15px; font-weight:400; color: rgb(238, 231, 231);}
+    .tv-audio .section2 .text small{ font-size: 8px; } 
+    .tv-audio .section2 .text button{padding: 5px 10px; margin-top: 10px;}
+
+    .retailers{display: block; line-height: 1.5;}
+    .section4{height: 215px;}
+    .section4 .text{font-size: 10px; margin-left:220px; padding-top: 80px; color: rgb(78, 78, 78); line-height: 1.5;}
+    .section4 .text h1{ color: black; font-size: 15px;}
+
+    .tv-audio .section5{height: 160px; background-repeat: no-repeat; background-size: contain;}
+    .tv-audio .section5 .text { margin-left: 250px; 
+        color: white; font-size: 10px; margin-right: 50px; padding-top: 30px;
+    }
+    .tv-audio .section5 .text button{padding:5px 5px; font-size: 10px; margin-top: 10px;}
+
+    .tv-audio .section6 {background-size: contain; height: 180px;}
+    .tv-audio .section6 .text{ margin-left: 20px; padding-top:40px;  margin-right: 10px; color: white; font-size: 10px; line-height: 1.2;}
+    .tv-audio .section6 button{font-size: 5px; padding: 5px 5px;}
+
+    .section7{display: block; margin: auto;}
+    .section7 .portable{width: 90%; margin: auto; background-position: center;}
+    .section7 .bluetooth{width: 1px; margin: auto; background-size: cover; background-position: center;}
+    .section7 .hifi{width: 90%; height: 500px; margin: auto; background-position: center;}
+}
 /*Tv audio video end  */
 
 /* home appliances */
@@ -148,18 +292,18 @@ button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px s
 .body2 .section1 small{ font-size: 14px; }
 
 .body2 .section2{ background-image: url(../image/Home\ Appliance/africa-homeappliances-hero-1-d.jpg); background-size:cover; height: 500px;}
-.body2 .section2 .text{ margin-right: 150px; margin-top: 20px;}
-.body2 .section2 h1{ font-size: 50px; font-weight:500; color: white; padding-top: 120px; margin-left: 785px;}
-.body2 .section2 p{ font-size: 15px; font-weight:500; color: white; margin-left: 785px;}
-.body2 .section2 button{ background-color: maroon; color: white; padding: 12px 25px; border: 1px solid maroon; margin-left: 790px;}
+.body2 .section2 .text{ margin-right: 150px; margin-top: 20px; margin-left: 840px; padding-top: 130px; color: white;}
+.body2 .section2 h1{ font-size: 50px; font-weight:500;}
+.body2 .section2 p{ font-size: 20px; font-weight:500; line-height: 1.7; padding-bottom: 10px;}
+.body2 .section2 button{ background-color: maroon; padding: 12px 25px; border: 1px solid maroon; }
 
 .body2 .section3 .row1{ display: flex; width: 100%; text-align: center; margin-top: 50px; margin-bottom: 50px; }
 .body2 .section3 .row1 .col{ width: 15%; height: 280px; justify-content: space-evenly; border: 1px solid gray; border-radius: 10px; margin: auto; padding: 30px;}
 .body2 .section3 .row1 .col img{ width: 160px; text-align: center;}
 
-.section5{ margin-top: -25px; }
-.section5 h1{ margin-left: 800px; padding-top: 180px; color: white; font-size: 40px;}
-.section5 button{ margin-left: 800px; margin-top: 20px; color: white;}
+.body2 .section5{ margin-top: -25px; }
+.body2 .section5 h1{ margin-left: 800px; padding-top: 180px; color: white; font-size: 40px;}
+.body2 .section5 button{ margin-left: 800px; margin-top: 20px; color: white;}
 
 .body2 .hero1{ background-image: url(../image/Home\ Appliance/africa-homeappliances-supercategory-5-1.jpg); height: 800px; background-size: contain; background-repeat: no-repeat; } 
 .body2 .hero1 .text{ margin-left: 800px;margin-right: 150px; padding-top: 200px;}
@@ -168,9 +312,74 @@ button{ padding: 10px 15px; background-color: maroon;color: white; border: 1px s
 
 
 .body2 .hero2{ background-image: url(../image/Home\ Appliance/africa-homeappliances-supercategory-6-1.jpg); height: 800px; background-size: contain; background-repeat: no-repeat;}
-.body2 .hero2 .text{margin-top:-100px; margin-left: 800px; margin-right: 200px; padding-top: 250px;}
+.body2 .hero2 .text{margin-top:-100px; margin-left: 800px; margin-right: 200px; padding-top: 250px; color: white;}
 .body2 .hero2 h2{ font-size: 40px; font-weight: 400; color: white;}
+.body2 .hero1 .text p{ font-size: 20px;color: white; }
 
 
+@media (max-width:1024px) {
+    .body2 .section1{text-align: center;  margin: 50px 180px; }
+    .body2 .section1 h1{ font-size: 38px; font-weight: 600;}
+    .body2 .section1 small{ font-size: 14px; }
 
-/* home applianes */
+    .body2 .section2 { background-size: contain; line-height: 0.9; background-repeat: no-repeat; height: 400px;}
+    .body2 .section2 .text{ margin-right: 50px; margin-top: 0px; margin-left: 600px; padding-top: 110px; color: white;}
+    .body2 .section2 h1{ font-size: 40px; font-weight:500;}
+
+    .body2 .hero1{ height: 650px; background-size: contain; background-repeat: no-repeat; } 
+    .body2 .hero1 .text{ margin-left: 550px;margin-right: 50px; padding-top: 80px;}
+
+    .body2 .hero2 .text{margin-left: 650px; margin-right: 100px; padding-top: 150px;  
+    color: white;}
+    .body2 .hero2 h2{ font-size: 40px; font-weight: 400; color: white;}
+
+    .body2 .footer{margin-top: -250px;}
+}
+
+@media (max-width:768px) {
+    .body2 .section2 { background-size: contain; background-repeat: no-repeat; height: 400px;}
+    .body2 .section2 .text{ margin-right: 50px; margin-top: 0px; margin-left: 450px; padding-top: 80px; color: white;}
+    .body2 .section2 h1{ font-size: 30px; font-weight:500;}
+    .body2 .section2 p{ line-height: 1.2; font-size: 15px;}
+
+    .body2 .section3 .row1{margin: auto; display: grid; width: 80%; grid-template-columns: repeat(auto-fill,minmax(1fr 1fr 1fr));
+    grid-template-rows: 300px 300px 300px 300px; margin-bottom: -550px;}
+    .body2 .section3 .row1 .col{width: 200px; margin: auto; }
+
+    .body2 .retailers{display: grid; margin: auto; width: 80%; grid-template-columns: repeat(auto-fill,200px); grid-template-rows: 150px 150px 150px;}
+
+    .body2 .hero1{ height: 500px; background-size: contain; background-repeat: no-repeat; } 
+    .body2 .hero1 .text{ margin-left: 400px;margin-right: 10px; padding-top: 80px;}
+    .body2 .hero1 .text h2{ font-size: 30px; }
+
+    .body2 .hero2 .text{margin-left: 470px; margin-right: 50px; padding-top: 100px;  
+    color: white;}
+    .body2 .hero2 h2{ font-size: 40px; font-weight: 400; color: white;}
+
+}
+
+@media (max-width:425px) {
+    .body2 .section1{ margin: 30px 40px; }
+    .body2 .section2 { background-size: contain; background-repeat: no-repeat; height: 180px;}
+    .body2 .section2 .text{ margin-right: 50px; margin-top: 0px; margin-left: 250px; padding-top: 50px; color: white;}
+    .body2 .section2 h1{ font-size: 10px; font-weight:500;}
+    .body2 .section2 p{ font-size: 6px;}
+    .body2 .section2 small
+    {font-size: 8px;}
+    .body2 .section2 button{ background-color: maroon; padding: 3px 15px; border: 1px solid maroon;}
+    .body2 .section3 .row1{margin: auto; display: grid; width: 80%; grid-template-columns: repeat(auto-fill,minmax(1fr 1fr 1fr));
+    grid-template-rows: 300px 300px 300px 300px; margin-bottom: -550px;}
+    .body2 .section3 .row1 .col{width: 200px; margin: auto; }
+
+    .body2 .retailers{display: grid; margin: auto; width: 80%; grid-template-columns: repeat(auto-fill, 1fr); grid-template-rows: 150px 150px 150px;}
+
+    .body2 .hero1{ height: 330px; background-size: contain; background-repeat: no-repeat; line-height: 0.9;} 
+    .body2 .hero1 .text{ margin-left: 200px;margin-right: 10px; padding-top: 50px; line-height: 0.9;}
+    .body2 .hero1 .text h2{ font-size: 20px; }
+    .body2 .hero1 .text p{font-size: 10px;} 
+
+    .body2 .hero2{height: 500px;}
+    .body2 .hero2 .text{margin-left: 250px; margin-right: 50px; padding-top:30px;  
+    color: white;}
+    .body2 .hero2 h2{ font-size: 20px; font-weight: 400; color: white;}   
+}
